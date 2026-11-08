@@ -28,46 +28,97 @@
 <main id="main" class="article">
   <div class="wrap-narrow">
   <h1>CrossOff Privacy Policy</h1>
-  <p class="updated">Effective 15 August 2026</p>
+  <p class="updated">Effective 8 November 2026</p>
 
-  <p>CrossOff is a personal productivity app that helps you block
-  distracting apps, finish what you planned, and stay accountable with
-  people you trust. This policy explains what data CrossOff handles,
-  what it deliberately cannot see, and who else is involved. It is
-  written to be read, not skimmed past.</p>
+  <p>CrossOff is a personal productivity app for iPhone and Android that
+  helps you block distracting apps, finish what you planned, and stay
+  accountable with people you trust. This policy explains what data
+  CrossOff handles, what it deliberately cannot see, what the people you
+  link with can see, and who else is involved. It is written to be read,
+  not skimmed past.</p>
 
   <div class="card">
     <p><strong>The short version:</strong> your tasks and progress sync
     to your own account; which apps you block and how long you use them
-    never leaves your iPhone — Apple's design means we cannot see it
-    even if we wanted to; your accountability buddies see only what you
-    explicitly share; we show no ads and sell nothing to anyone.</p>
+    never leave your phone — on iPhone, Apple's design means we cannot
+    see it even if we wanted to, and on Android it stays in the app's own
+    on-device storage; the friends you link with see what you choose to
+    share plus a few accountability signals this page lists; we show no
+    ads and sell nothing to anyone.</p>
   </div>
 
   <h2>What we collect</h2>
   <ul>
-    <li><strong>Account:</strong> when you sign in with Apple or
-    Google, we receive your name, email address, and a user ID. Sign
-    in with Apple lets you hide your email.</li>
+    <li><strong>Account:</strong> when you sign in with Apple, Google,
+    or an email address and password, we receive your name (where the
+    sign-in provides one), your email address, and a user ID. Sign in
+    with Apple lets you hide your email. To confirm an email address we
+    send a one-time code through SendGrid, an email delivery service,
+    which receives your address for that purpose only; while the code is
+    valid we store only a hashed form of it. Passwords are handled by
+    Firebase Authentication and are never visible to us. If you keep
+    "Keep me posted" switched on when you set up CrossOff, we keep your
+    email address on a list to send you occasional CrossOff news and
+    tips — a few a year. Turn it off at any time in Settings › Account,
+    or with the unsubscribe link in any such email; we delete the entry
+    when you delete your account.</li>
     <li><strong>Things you create:</strong> tasks, lists, actions,
-    schedules, notes to buddies, XP and completion history, and your
-    settings. These sync to your account so your devices stay in step,
-    and a daily safety copy is kept so your data can survive a lost
-    phone.</li>
-    <li><strong>Buddy connections:</strong> who you've linked with,
-    invite codes, your @username if you claim one, an email-to-account
-    lookup entry so friends can find you, approval requests you send or
-    answer, and a push-notification address for your device.</li>
-    <li><strong>Subscription status:</strong> whether your CrossOff Pro subscription is active, via Apple and RevenueCat (below).
+    schedules, the steps inside a task, XP and completion history, the
+    coins you earn and what you unlock in the Store, and your settings
+    (your theme and character, reminders, sharing switches). These sync
+    to your account so your devices stay in step. A daily safety copy is
+    kept, and you can make one yourself or restore one from
+    Settings.</li>
+    <li><strong>When you crossed things off:</strong> your completion
+    history includes the time of each completion. The app uses those
+    times on your phone to time reminders around when you usually do
+    things — for example, when you have skipped a day, a nudge shortly
+    after your usual time if the task is still open. This is worked out
+    on your device each time and is not stored or sent anywhere; you can
+    turn these reminders off in Settings › Notifications.</li>
+    <li><strong>Friend connections:</strong> who you have linked with
+    and anyone you have blocked, friend requests, invite codes, your
+    @username, an email-to-account lookup entry so friends can find you,
+    the approval requests you send or answer, the pacts and challenges
+    you are in, a push-notification address for your device together
+    with your switches for friends' notifications, the day your app
+    was last opened (a single date, never a time of day) and, while
+    "Show when I'm online" is on, when you were last in the app.</li>
+    <li><strong>Subscription status:</strong> whether your CrossOff
+    Standard subscription is active, via Apple and RevenueCat (below).
     We never see your payment details — Apple keeps those.</li>
-    <li><strong>Diagnostics:</strong> crash reports (via Sentry) and a
-    small number of in-app events (for example, that a paywall was
-    viewed) so we can fix problems and understand what's working.
-    These are tied to your user ID, not sold or shared for
-    advertising.</li>
+    <li><strong>Diagnostics:</strong> when CrossOff crashes or hits an
+    error it cannot recover from, a report goes to Sentry, our
+    error-reporting service, with the technical details of the failure,
+    your account's internal ID, the app version you were running, and
+    basic facts about your phone (model, system version, text size,
+    language). We also record a small number of in-app events (for
+    example, that the paywall was viewed, or that setup was completed)
+    so we can understand what is working (see Usage statistics below).
+    Reports never include your
+    tasks, lists, limits, websites or friends, and none of this is sold
+    or used for advertising.</li>
+    <li><strong>Reports you send us:</strong> if you choose to send a
+    report from Settings › Report a problem, what you write is emailed
+    to our support inbox, with the email address on your account as the
+    reply address so we can answer you, together with technical details
+    about the app on your phone: your account's ID, when it was made and
+    how you sign in, a short code for this phone, the version, your
+    phone's system version, language and time zone, whether your data
+    has synced, your subscription status, how many reminders are set,
+    your Screen Control settings as on/off switches and counts, and how
+    many tasks, lists and friends you have. A copy goes to Sentry (below)
+    so it sits beside any crash from the same account. It never includes
+    what your tasks or lists say, the names you give your limits,
+    websites, which apps you use, or who your friends are. The screen
+    shows the full list before you send. To help us fix problems, the
+    app also keeps a short on-device log of its own recent actions (for
+    example, "a sync finished"), which travels with a report or a crash
+    report and is deleted when you sign out.</li>
   </ul>
 
   <h2>What we deliberately cannot see</h2>
+  <h3>On iPhone</h3>
   <p>CrossOff's blocking is built on Apple's Screen Time technology
   (Family Controls). Apple designed it so that:</p>
   <ul>
@@ -78,51 +129,175 @@
     iPhone.</li>
     <li><strong>Your app usage stays on your device.</strong> Time
     measurements run inside Apple's sealed system extensions on the
-    phone itself. CrossOff's servers receive none of it.</li>
+    phone itself. CrossOff's servers receive none of it. The Screen Time
+    report inside the app is drawn by iOS in a sealed view the app
+    cannot read.</li>
+  </ul>
+  <h3>On Android</h3>
+  <ul>
+    <li><strong>Blocking runs inside the app on your phone.</strong> It
+    uses Android's Usage access and "display over other apps"
+    permissions to notice when a blocked app opens and to count the
+    minutes you spend in the apps you chose to limit. Which apps you
+    chose, today's minutes, and any unlock grants are stored on the
+    phone only and are never sent to us.</li>
+    <li><strong>The web filter is an on-device DNS filter.</strong>
+    While it is on, your phone's website lookups go to Cloudflare's
+    public resolver (1.1.1.1, or 1.1.1.3 for the family filter) over an
+    encrypted connection instead of your network's own, so adult sites
+    and the sites you listed can be blocked. CrossOff does not log,
+    store or transmit those lookups, and no other traffic passes
+    through it. The filter's settings and your blocked list stay on the
+    phone.</li>
+  </ul>
+  <h3>On both</h3>
+  <ul>
     <li><strong>Vault labels are local.</strong> If you name a Vault
-    entry, that name stays on your device only. When you ask a buddy to
-    open your Vault, they are told you want to open "your Vault" —
-    never what's inside it.</li>
+    entry, that name stays on your device only. When you ask a friend to
+    open your Vault, they are told you want to open "your Vault" — never
+    what is inside it.</li>
+    <li><strong>Your web filter is nobody else's business.</strong> The
+    18+ content filter, the websites you block, and whether the filter
+    is on, off, in your Vault or paused are never shared with friends
+    and are not synced to your account. The only time any of it reaches
+    us is as on/off switches and counts inside a problem report you
+    choose to send — never the websites. A friend you ask to open the
+    Vault is told it is "a protected setting", never what it is.</li>
+    <li><strong>Focus Mode, relax days and limit names</strong> stay on
+    your device. A friend asked to approve ending Focus Mode early is
+    told that, and nothing about what you were focusing on.</li>
   </ul>
 
-  <h2>What your buddies can see</h2>
-  <p>Accountability works by sharing — but only what you switch on,
-  and you can see exactly what that is in the app:</p>
+  <h2>What your friends can see</h2>
+  <p>Accountability works by sharing — but only what you switch on, plus
+  the signals listed here, and you can see exactly what that is in the
+  app:</p>
   <ul>
-    <li>Sections or lists you explicitly share from the Sharing screen.</li>
-    <li>Your Productivity Tracker at the level you choose (off, totals
-    only, or full).</li>
-    <li>Requests you send them (for unlock time, settings changes, or
-    opening your Vault) — with minutes asked, never app names or Vault
-    contents.</li>
+    <li>Your display name, @username, level, and the character and
+    backdrop you wear — not your email address. (Friends' lists made
+    before November 2026 carried it; the app removes it the next time
+    either phone opens.)</li>
+    <li>Lists you explicitly share, and the sections of your list you
+    share from a friend's Sharing screen. A friend you let edit a shared
+    list can change it.</li>
+    <li><strong>The Friends board:</strong> if you join it, friends on it
+    see how many things you crossed off each day this week, your level
+    and XP. <em>What</em> you crossed off stays behind a curtain you open
+    one friend at a time — and they see it only if they have opened
+    theirs for you. You can hide a single completion from friends from
+    your History.</li>
+    <li>Requests you send them — for unlock time, a settings change,
+    opening your Vault, or ending Focus Mode early — with the minutes
+    asked, never app names or Vault contents. If you have chosen a friend
+    as a Vault approver, they can see which day you last opened CrossOff
+    ("hasn't opened the app in 3 days"), and you can see the same about
+    them.</li>
     <li>Whether a PIN they hold for you was used — an honesty signal,
     part of the deal.</li>
+    <li>Whether you're using the app right now, or roughly when you
+    last did ("Last online 3 hours ago"). Only the people on your
+    friends list can see this, and you can turn it off on the My
+    Friends page (Show when I'm online) — when it's off, nothing is
+    shared.</li>
+    <li>The progress you share with a friend includes which time zone
+    your phone is in, so their app knows when your week ends and can
+    pay the Monday coins on time. It's a time zone, not a location —
+    and only the friends you share progress with can see it.</li>
+    <li><strong>If you switch off CrossOff's blocking from your phone's
+    settings</strong> while blocking is on — Screen Time access on
+    iPhone, Usage access or the overlay permission on Android — linked
+    friends get one notification saying so, and one when it is back.
+    Nothing else about your Screen Control reaches them.</li>
     <li>If your subscription lapses and your blocking turns off, linked
-    buddies get one notification saying so. Accountability you can
+    friends get one notification saying so. Accountability you can
     switch off silently isn't accountability.</li>
+    <li><strong>Pacts and challenges:</strong> the people in a pact or
+    challenge with you see your name and which days you did its actions,
+    for as long as it lasts. In a group pact, members you have not added
+    as friends see only that the pact has one more member — unless the
+    person who proposed it chose an open room, which every invitee is
+    told before joining; then everyone in it sees everyone's name, days
+    and character.</li>
+    <li>Your notification switches for friends' activity (nudges and
+    challenges, shared lists) are shared with your friends' phones so
+    they can respect them — a friend's app skips a push you turned off.
+    Nothing else about your settings is shared this way.</li>
+    <li>Pushes between friends are sent through our servers, which check
+    that the two of you are connected before forwarding the push to the
+    notification service. We keep, for one hour, when you sent pushes
+    and to whom — never the words — to limit how many a person can
+    send.</li>
   </ul>
+
+  <h3>Finding friends</h3>
+  <p>Friends link by invite code, QR code, @username or email. A
+  request by username or email has to be accepted by the other person;
+  declining is quiet, and blocking someone is never disclosed to them.
+  CrossOff can also suggest people who are friends with at least two of
+  your friends: a suggestion shows their name, username and character,
+  and which of your friends they share — nothing else. You can turn off
+  appearing in other people's suggestions in Friends › My Friends.</p>
+
+  <h2>Usage statistics</h2>
+  <p>To see which parts of CrossOff are used and how long they take,
+  the app sends usage events to PostHog (PostHog Inc., EU Cloud — the
+  data is held in the EU), a service provider processing on our
+  behalf: the screen opened and the seconds spent on it, which of a
+  fixed set of buttons and actions were used, the answer to the
+  notification and Screen Time permission prompts, and the subscription
+  plan. Each event is tied to your account id and carries the app
+  version, update, operating system and device type. Never what you
+  write — no action, habit, list, friend or Vault names, no email, no
+  notes. Your IP address reaches PostHog with each request and is
+  discarded, not stored. Turn it off any time in Settings › Account ›
+  Share usage statistics; it stops from that phone at once. Usage
+  events are kept for 12 months.</p>
 
   <h2>Services we rely on</h2>
   <ul>
-    <li><strong>Apple</strong> — sign-in, payments, subscriptions, and
-    the Screen Time system itself.</li>
-    <li><strong>Google Firebase</strong> — authentication and the
-    database where your synced data lives.</li>
+    <li><strong>Apple</strong> — sign-in, payments and subscriptions on
+    iPhone, and the Screen Time system itself.</li>
+    <li><strong>Google</strong> — sign in with Google.</li>
+    <li><strong>Google Firebase</strong> — authentication, the database
+    where your synced data lives, and the small server functions that
+    send and check email sign-in codes.</li>
+    <li><strong>SendGrid</strong> — delivers the one-time code when you
+    confirm an email address, and the reports you send from Settings ›
+    Report a problem. Receives your email address, and a report's
+    contents, for those purposes only.</li>
     <li><strong>RevenueCat</strong> — subscription receipt validation.
     Receives your user ID and purchase receipts; never your payment
     details.</li>
-    <li><strong>Expo</strong> — delivery of push notifications.</li>
-    <li><strong>Sentry</strong> — crash reporting.</li>
+    <li><strong>Expo</strong> — delivery of push notifications and of
+    app updates.</li>
+    <li><strong>Sentry</strong> — crash reporting and the reports you
+    send from Settings › Report a problem.</li>
+    <li><strong>PostHog</strong> — the usage statistics described
+    above. Receives your account id and those events; never what you
+    write.</li>
+    <li><strong>Cloudflare</strong> — on Android only, and only while the
+    web filter is on: the DNS resolver your website lookups are sent to
+    (see above).</li>
+    <li><strong>GitHub Pages</strong> — hosts the shared content the app
+    downloads (reminder messages, character and backdrop art). Like any
+    web host it sees the ordinary details of a request, such as your IP
+    address; it receives nothing about your account.</li>
   </ul>
   <p>Each receives only what it needs to do its job. None of them may
   use your data for their own advertising.</p>
 
   <h2>Deleting your data</h2>
-  <p>Settings → Account → Delete Account removes your account and your
-  synced data. Data you shared with buddies (like a standing note)
-  disappears with it. Device-local Screen Time configuration is removed
-  when you delete the app. If anything ever seems left behind, email us
-  and we'll remove it by hand.</p>
+  <p>Settings › Account › Delete Account removes your account, your
+  synced data and its safety copies, your invite codes and friend
+  requests, your push address, last-opened day and online status,
+  your entry on your friends' lists, and the usage statistics tied to
+  your account id. Lists you shared stop being shared, and you drop
+  out of any pacts or challenges you are in. Device-local Screen Control
+  configuration
+  is removed when you delete the app. Crash reports and problem reports
+  already sent are kept by our error-reporting service for a limited
+  time and then expire. If anything ever seems left behind, email us and
+  we will remove it by hand.</p>
 
   <h2>Children</h2>
   <p>CrossOff is not directed at children under 13, and we don't
